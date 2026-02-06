@@ -1,0 +1,15 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/coloringStyle.uss?fileID=7433441132597879392&amp;guid=2bb8bb7c17532964ea0be90e70f0d33f&amp;type=3#coloringStyle" />
+    <ui:VisualElement name="contianer" style="flex-grow: 1; background-image: none;">
+        <ui:Button text="Toggle Coloring Mode" name="toggleColoringMode" style="font-size: 33px; width: 374px; align-self: flex-start; border-top-left-radius: 18px; border-top-right-radius: 18px; border-bottom-right-radius: 18px; border-bottom-left-radius: 18px;" />
+        <ui:Label text="Coloring" name="Label" class="header" style="font-size: 191px; margin-top: 1429px; background-color: rgba(255, 255, 255, 0.36); align-self: center;" />
+        <ui:Button text="Red&#10;" name="color_0" class="button" style="align-self: flex-start; left: 0;" />
+        <ui:Button text="Blue" name="color_1" class="button" style="left: 180px;" />
+        <ui:Button text="Green" name="color_2" class="button" style="left: 360px;" />
+        <ui:Button text="Gray" name="color_3" class="button" style="left: 540px;" />
+        <ui:Button text="White&#10;" name="color_4" class="button" style="left: 720px;" />
+        <ui:Button text="Black&#10;" name="color_5" class="button" style="left: 900px;" />
+        <ui:Button text="Toggle Drawing Style" name="toggleDrawingStyle" style="font-size: 33px; width: 374px; align-self: flex-end; border-top-left-radius: 18px; border-top-right-radius: 18px; border-bottom-right-radius: 18px; border-bottom-left-radius: 18px; margin-top: -1774px;" />
+        <ui:Button text="Back" name="backToMainMenu" style="font-size: 33px; width: 141px; align-self: flex-end; border-top-left-radius: 18px; border-top-right-radius: 18px; border-bottom-right-radius: 18px; border-bottom-left-radius: 18px; margin-top: 14px;" />
+    </ui:VisualElement>
+</ui:UXML>
