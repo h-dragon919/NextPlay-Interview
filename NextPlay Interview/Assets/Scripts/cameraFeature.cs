@@ -30,16 +30,32 @@ public class cameraFeature : MonoBehaviour
         }
 
         // Get available webcams
-        WebCamDevice[] devices = WebCamTexture.devices;//we're just gonna use the first one so back camera
+        WebCamDevice[] devices = WebCamTexture.devices;
         
         if (devices.Length == 0)
         {
             Debug.LogError("No webcam found!");
             yield break;
         }
-
-        // Use selected webcam or default to first
-        string selectedDevice = devices[Mathf.Min(webcamIndex, devices.Length - 1)].name;
+        
+        // Find the front-facing camera (the one facing the user)
+        string selectedDevice = "";
+        foreach (WebCamDevice device in devices)
+        {
+            if (device.isFrontFacing)
+            {
+                selectedDevice = device.name;
+                Debug.Log("Found front camera: " + device.name);
+                break;
+            }
+        }
+        
+        // If no front-facing camera found, fall back to first available camera
+        if (string.IsNullOrEmpty(selectedDevice))
+        {
+            Debug.LogWarning("No front-facing camera found, using first available camera");
+            selectedDevice = devices[0].name;
+        }
         
         // Create webcam texture
         webcamTexture = new WebCamTexture(selectedDevice, 1920, 1080, 30);
@@ -54,7 +70,7 @@ public class cameraFeature : MonoBehaviour
     {
         if (isPlaying && webcamTexture != null && webcamTexture.didUpdateThisFrame)
         {
-            // Fix mirroring if needed (webcams are usually mirrored)
+            // Fix mirroring if needed 
             displayImage.rectTransform.localScale = new Vector3(-1, 1, 1);
         }
 

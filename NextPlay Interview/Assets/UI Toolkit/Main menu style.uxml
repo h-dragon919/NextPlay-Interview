@@ -1,8 +1,9 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/mainMenuStyle.uss?fileID=7433441132597879392&amp;guid=591e9ec3849da634eb7bad1fa20917d2&amp;type=3#mainMenuStyle" />
     <ui:VisualElement name="contianer" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/1a61481768245bf22dc6b83b0e46edd3.jpg?fileID=2800000&amp;guid=d9dcf8738b714c341abd790e00596525&amp;type=3#1a61481768245bf22dc6b83b0e46edd3&quot;);">
-        <ui:Button text="Play First Level" name="firstLevel" class="button" style="margin-top: 724px;" />
-        <ui:Button text="Play Second Level" name="secondLevel" class="button" style="margin-top: 40px; white-space: pre; font-size: 48px;" />
-        <ui:Label text="Main Menu" class="header" style="font-size: 191px; margin-top: -549px; background-color: rgba(255, 255, 255, 0.36);" />
+        <ui:Label text="Main Menu" class="header" style="font-size: 191px; margin-top: 500px; background-color: rgba(255, 255, 255, 0.36);" />
+        <ui:Button text="Play First Level" name="firstLevel" class="button" style="margin-top: 0;" />
+        <ui:Button text="Play Second Level" name="secondLevel" class="button" style="margin-top: 50px; white-space: pre; font-size: 48px;" />
+        <ui:Button text="Play Third Level" name="thirdLevel" class="button" style="margin-top: 50px; white-space: pre; font-size: 48px;" />
     </ui:VisualElement>
 </ui:UXML>

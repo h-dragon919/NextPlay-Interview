@@ -15,6 +15,8 @@ public class mainMenu : MonoBehaviour
         firstLevelButton.RegisterCallback<ClickEvent>(evt => LoadLevel(evt, 1));
         secondLevelButton = doc.rootVisualElement.Q<Button>("secondLevel");
         secondLevelButton.RegisterCallback<ClickEvent>(evt => LoadLevel(evt, 2));
+        secondLevelButton = doc.rootVisualElement.Q<Button>("thirdLevel");
+        secondLevelButton.RegisterCallback<ClickEvent>(evt => LoadLevel(evt, 3));
     }
 
     // Update is called once per frame

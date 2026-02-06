@@ -9,7 +9,7 @@
         <ui:Button text="Gray" name="color_3" class="button" style="left: 540px;" />
         <ui:Button text="White&#10;" name="color_4" class="button" style="left: 720px;" />
         <ui:Button text="Black&#10;" name="color_5" class="button" style="left: 900px;" />
-        <ui:Button text="Toggle Drawing Style" name="toggleDrawingStyle" style="font-size: 33px; width: 374px; align-self: flex-end; border-top-left-radius: 18px; border-top-right-radius: 18px; border-bottom-right-radius: 18px; border-bottom-left-radius: 18px; margin-top: -1774px;" />
+        <ui:Button text="Toggle Drawing Style" name="toggleDrawingStyle" style="font-size: 33px; width: 374px; align-self: flex-end; border-top-left-radius: 18px; border-top-right-radius: 18px; border-bottom-right-radius: 18px; border-bottom-left-radius: 18px; margin-top: -1727px;" />
         <ui:Button text="Back" name="backToMainMenu" style="font-size: 33px; width: 141px; align-self: flex-end; border-top-left-radius: 18px; border-top-right-radius: 18px; border-bottom-right-radius: 18px; border-bottom-left-radius: 18px; margin-top: 14px;" />
     </ui:VisualElement>
 </ui:UXML>
